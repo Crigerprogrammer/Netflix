@@ -1,0 +1,246 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Netflix</title>
+    <!-- Icono Netflix en la pestaña -->
+    <link rel="shortcut icon" href="img/netflix.png">
+    <!-- Google Fonts SANS Fuente parecida a Netflix -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- Bootstrap Framework -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Librerias para el carousel y otros -->
+    <link href="~/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Nuestra hoja de estilos -->
+    <link href="~/lib/style.css" rel="stylesheet">
+    <!-- JQuery para cargar otros HMTL-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+
+            <div id="logo" class="pull-left">
+                <img src="img/netflix2.png" class="logonetflix" alt="Logo de Netflix" title="Netflix Logo" />
+
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="#inicio">Inicio</a></li>
+                        <li><a href="#series">Dramas</a></li>
+                        <li><a href="#peliculas">Accion y Aventuras</a></li>
+                        <li><a href="#recientemente">Niños</a></li>
+                        <li><a href="#milista">Mi Lista</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header><!-- #header -->
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro">
+        <div class="intro-container">
+            <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <img src="img/intro-carousel/capitanmarvel.png" class="logocarousel" alt="Logo de Capitana Marvel" title="Capitana Marvel Logo" />
+                                <p class="logocarousel">
+                                    Una guerrera extraterrestre de la civilización Kree se encuentra atrapada en medio de una batalla.<br>
+                                    Con la ayuda de Nick Fury trata de descubrir los secretos de su pasado <br> mientras aprovecha sus poderes para terminar la guerra.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <img src="img/intro-carousel/shazam.png" class="logocarousel" alt="Logo de Shazam!" title="Shazam!" />
+                                <p class="logocarousel">
+                                    Billy Batson, un astuto joven de 14 años, se transforma en el superhéroe Shazam, <br>
+                                    pero sus poderes son puestos a prueba cuando se enfrenta al mal.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                    <span aria-hidden="false"></span>
+                </a>
+                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                    <span aria-hidden="false"></span>
+                </a>
+
+            </div>
+        </div>
+    </section><!-- #intro -->
+
+    <section id="continuar">
+        <h3>Continuar viendo para Cristian</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=VhCUoIuC5zs"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=t433PEQGErc"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=Nly3-14vLh0"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=fOZ4Wx7ri9Q"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=6ZfuNTqbHE8"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=aNXV7xKMDeY"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=B_DpkUSH2Mk&t=6s"></a></div>
+            <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=P_FTsR5QfDQ"></a></div>
+        </div>
+    </section>
+
+    <section id="series">
+        <h3>Dramas</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img class="imagen1" src="img/serie1.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie2.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie3.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie4.jpg"> </div>
+            <div class="item"><img class="imagen1" src="img/serie5.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie6.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie7.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie8.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie9.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie10.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie11.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/serie12.jpg"></div>
+        </div>
+    </section>
+
+    <section id="peliculas">
+        <h3>Accion y Aventuras</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img class="imagen1" src="img/pelicula1.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula2.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula3.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula4.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula5.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula6.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula7.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula8.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula9.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula10.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula11.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/pelicula12.jpg"></div>
+        </div>
+    </section>
+
+    <section id="Recientemente">
+        <h3>Niños</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img class="imagen1" src="img/reciente1.png"></div>
+            <div class="item"><img class="imagen1" src="img/reciente2.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente3.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente4.jpeg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente5.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente6.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente8.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente9.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente10.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente11.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/reciente12.jpg"></div>
+        </div>
+    </section>
+
+    <section id="milista">
+        <h3>Mi Lista</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img class="imagen1" src="img/lista1.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista2.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista3.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista4.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista5.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista6.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista7.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista8.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista9.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista10.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista11.jpg"></div>
+            <div class="item"><img class="imagen1" src="img/lista12.jpg"></div>
+        </div>
+    </section>
+
+    <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <a href="https://www.facebook.com/NetflixLatino/?brand_redir=684961094904799" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/NetflixLAT/" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+                        <a href="https://twitter.com/netflixLAT" target="_blank"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" target="_blank"><ion-icon size="large" name="logo-youtube"></ion-icon></a>
+                        <p>Audio</p>
+                        <p>Prensa</p>
+                        <p>Privacidad</p>
+                        <p>Contáctenos</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <p>Audio descriptivo</p>
+                        <p>Relaciones con Inversionistas</p>
+                        <p>Avisos Legales</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <p>Centro de Ayuda</p>
+                        <p>Empleo</p>
+                        <p>Preferencias de Cookies</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <p>Tarjetas de Regalo</p>
+                        <p>Términos de Uso</p>
+                        <p>Información Corporativa</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Programación 3 Universidad Mariano Galvez</strong>.<br>
+                Cristian Gerardo Hernandez Barrios 0900-15-549<br>
+                Denis Eduardo Bances Luna 0900-17-1073<br>
+            </div>
+        </div>
+    </footer><!-- #footer -->
+    <!-- JavaScript Librerias -->
+    <!-- Libreria de Iconos -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="~/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/superfish/hoverIntent.js"></script>
+    <script src="~/lib/superfish/superfish.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main2.js"></script>
+
+</body>
+</html>
