@@ -1,7 +1,6 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
 }
 
 <!DOCTYPE html>
@@ -35,7 +34,10 @@
 
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="#inicio">Inicio</a></li>
+                        <li class="menu-active" data-toggle="modal" data-target="#exampleModal">
+                            <a href="#modal">Agregar Pelicula</a>
+                        </li>                       
+                        <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#series">Dramas</a></li>
                         <li><a href="#peliculas">Accion y Aventuras</a></li>
                         <li><a href="#recientemente">Niños</a></li>
@@ -45,6 +47,45 @@
             </div>
         </div>
     </header><!-- #header -->
+<!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title black-title" id="exampleModalLabel">Ingresando Nueva Pelicula</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="black" >Favor llene los siguientes campos </p>
+                        <form id="form1" runat="server">
+                        <div>
+                            <p class="black">Nombre de Película</p>
+                            <input id="TextBox1" runat="server" name="nombrePelicula" >
+                            <p class="black">Año</p>
+                            <input id="TextBox2" runat="server" name="añoPelicula" >
+                            <p class="black">Imágen</p>
+                            <input id="TextBox3" type="file" runat="server" name="imagenPelicula" >
+                            <p class="black">Categoria</p>
+                            <select>
+                                <option value="Drama"> Drama </option>
+                                <option value="AccionYAventura"> Accion y Avetura </option>
+                                <option value="Niños"> TV Niños </option>
+                                <option value="MiLista"> Mi Lista </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onClick="Button3_Click" id="Button3" runat="server">Agregar</button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
     <!--==========================
       Intro Section
     ============================-->
