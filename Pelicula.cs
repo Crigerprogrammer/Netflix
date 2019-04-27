@@ -5,11 +5,11 @@ using System.Web;
 
 
 /*
- La clase NodoDoble, de una manera más ideal pudiese ser renombrada como "Pelicula"
- ya que representa eso mismo, una pelicula
- Tiene 4 atributos
+ Tiene 6 atributos
  nombre -> Titulo de la pelicula
- anio -> año de estreno
+ año -> año de estreno
+ imagen -> apunta al path de la imagen
+ categoria -> Una referencia a la categoria
  siguiente-> apuntador al siguiente nodo o siguiente pelicula
  anterior -> apuntador al anterior nodo o anterior pelicula
 

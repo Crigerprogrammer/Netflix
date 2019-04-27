@@ -5,7 +5,7 @@ using System.Web;
 
 /*
     La clase Categoria
-    Esta clase representa las diferentes categorías que existirán en tu aplicación, tales
+    Esta clase representa las diferentes categorías que existirán en la aplicación, tales
     como Drama, Acción, etc.
     
     Cuenta con dos atributos:
